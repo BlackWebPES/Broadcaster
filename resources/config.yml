@@ -17,49 +17,44 @@
 # Extra tag for titles:
 # - {SUBTITLE}: Add subtitle (the text after this tag will be the content of the subtitle) 
 # Prefix
-prefix: "&9[&eBroadcaster&9]"
+prefix: ""
 # Suffix
-suffix: "[A]"
+suffix: ""
 # Date\Time format (replaced in {TIME}). For format codes read http://php.net/manual/en/datetime.formats.php
 datetime-format: "H:i:s"
 # Message broadcast
 message-broadcast:
  # Enable message broadcast
- enabled: true
+ enabled: false
  # Broadcast interval (in seconds)
- time: 15
+ time: 0
  # Command /sendmessage format
- command-format: "&e[{TIME}] {PREFIX} {SUFFIX} &a{SENDER}&e>&f {MESSAGE}"
+ command-format: "{MESSAGE}"
  # Broadcast messages
  messages:
-  - "&e[{TIME}] {PREFIX}&f 1st message"
-  - "&e[{TIME}] {PREFIX}&f 2nd message"
-  - "&e[{TIME}] {PREFIX}&f 3rd message"
+  - ""
 # Popup broadcast
 popup-broadcast:
  # Enable popup broadcast
- enabled: true
+ enabled: false
  # Popup broadcast interval (in seconds)
- time: 15
+ time: 0
  # Popup duration (in seconds)
- duration: 5
+ duration: 0
  # Command /sendpopup format
- command-format: "&a{SENDER}&e>>&f {MESSAGE}"
+ command-format: "{MESSAGE}"
  # Popup broadcast messages
  messages:
-  - "&aWelcome to your server"
-  - "&d{TOTALPLAYERS} &eof &d{MAXPLAYERS} &eonline"
-  - "&bCurrent Time: &a{TIME}"
+  - ""
 # Title broadcast
 title-broadcast:
  # Enable title broadcast
- enabled: true
+ enabled: false
  # Title broadcast interval
- time: 30
+ time:0
  # Command /sendtitle format
- command-format: "&d{MESSAGE}"
+ command-format: "{MESSAGE}"
  # Title broadcast messages
  messages:
-  - "&aWelcome to your server!{SUBTITLE}&bGood game!"
-  - "&eHello player!"
+  - ""
 ...
